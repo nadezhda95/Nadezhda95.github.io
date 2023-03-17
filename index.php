@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Personal Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  </head>
+  <body>
+    <header>
+      <div class="block">
+        <div id="logo">
+          <img
+            class="small"
+            src="https://i.postimg.cc/C1NQZbLB/Mask-Group.png"
+            alt="logo"
+          >
+        </div>
+      </div>
+      <div class="block">
+        <nav>
+          <ul>
+            <li>Portfolio</li>
+            <a href="#blog"><li>Blog</li></a>
+            <a
+              href="CV.pdf"
+              target="_blank">
+              <button>Download CV</button>
+            </a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <hr>
+    <main>
+      <section id="about">
+        <p>Hello world, I'm</p>
+        <p>Nadezhda</p>
+        <div id="container-about">
+          <div class="block">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a href="#contact"><button class="button-contact">Contact Me</button></a>
+            <div id="sn">
+              <a 
+                href="https://www.linkedin.com/in/nadezhda-sitdikova/"
+                target="_blank"
+              >
+                <img
+                  class="social"
+                  src="https://i.postimg.cc/x8yvSj1k/LinkedIn.png"
+                  alt="linkedin"
+                >
+              </a>
+              <a
+                href="https://t.me/brainwashed_from_rock"
+                target="_blank"
+              >
+                <img
+                  class="social"
+                  src="https://i.postimg.cc/nVvYm2GH/Telegram.png"
+                  alt="telegram"
+                >
+              </a>
+            </div>
+          </div>
+          <div class="block">
+            <div id="avatar">
+              <img
+                class="avatar"
+                src="https://i.postimg.cc/xdfpq7zN/Gunter-the-penguin-1.png"
+                alt="avatar"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div id="container-projects">
+          <ul>
+            <li><a href="https://t.me/PM_assistant_bot">Application tg bot</a></li>
+            <li><a href="#">Project 2</a></li>
+            <li><a href="#">Project 3</a></li>
+          </ul>
+        </div>
+      </section>
+      <hr>
+      <section id="blog">
+        <h2>Blog</h2>
+        <div id="container-blog" class="swiper">
+          <div class="swiper-wrapper">
+            <div class="article swiper-slide">
+              <div class="article-text">
+                <h3>
+                  <a 
+                    href="https://habr.com/en/post/666372/"
+                    target="_blank">
+                    Notifications from google calendar in tg
+                  </a>
+                </h3>
+                <p>Telegram bot for sending daily plans to chat from several Google calendars</p>
+              </div>
+              <div class="article-button">
+                <a 
+                  href="https://habr.com/en/post/666372/"
+                  target="_blank">
+                  <button class="button-read">Read</button>
+                </a>
+              </div>
+            </div>          
+            <div class="article swiper-slide">
+              <div class="article-text">
+                <h3><a href="https://habr.com/en/post/585546/" target="_blank">Multiple button selection in tg bot</a></h3>
+                <p>Telegram bot that allows multiple selection using inline keyboard buttons</p>
+              </div>
+              <div class="article-button">
+                <a href="https://habr.com/en/post/585546/" target="_blank"><button class="button-read">Read</button></a>
+              </div>
+            </div>
+            <div class="article swiper-slide">
+              <div class="article-text">
+                <h3><a href="https://habr.com/en/post/585456/" target="_blank">Connecting telegram bot to google sheets</a></h3>
+                <p>Telegram bot in AppScript</p>
+              </div>
+              <div class="article-button">
+                <a href="https://habr.com/en/post/585456/" target="_blank"><button class="button-read">Read</button></a>
+              </div>
+            </div>  
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+      </section>
+      <hr>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Leave your message an email as an option to reach me</p>
+        <form method="post" action="submit.php">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+          <button class="button-contact"><input type="submit" value="Contact Me" /></button>
+        </form> 
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2023</p>
+    </footer>
+  </body>
+</html>
